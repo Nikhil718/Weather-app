@@ -39,7 +39,7 @@ function App() {
   
 
   return (
-    <div>
+    
     <div className={(typeof weather.main === "undefined") ? 'app' : ((weather.weather[0].main === "Rain") ? 'app rain' : ((weather.weather[0].main === "Clear") ? 'app warm': 'app' )) }>
      <main>
        <div className="search-box">
@@ -68,18 +68,18 @@ function App() {
 
            <div className="weather"> {weather.weather[0].main} </div>
         </div>
+       
        </div>
+       
        ) : ('') }
-
+      <div class="copyright">
+        &#128578; by Nikhil R Naik.
+    </div>
      </main>
      
     </div>
-    <div class="copyright">
-                &#128578; by Nikhil R Naik.
-              
-             
-            </div>
-    </div>
+          
+    
   );
 }
 
