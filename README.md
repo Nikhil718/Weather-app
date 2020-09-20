@@ -1,1 +1,1 @@
-# Weather-app
+Simple Weather app developed using React.
